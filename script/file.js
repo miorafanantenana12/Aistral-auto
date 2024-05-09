@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports.config = {
  name: "file",
  version: "2.4.3",
- role: 2,
+ role: 0,
  credits: "cliff",
  aliases: ["file"],
 cooldown: 0,

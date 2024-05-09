@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Autobot - Marjhxn</title>
+    <title>Autobot - Dũngkon</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -38,7 +38,7 @@
 </nav>
 
 <div class="container">
-    <h1 class="col text-center" style="font-size: 20px; padding: 10px; font-family: Arial, sans-serif; font-weight: bold;">Enter Your Facebook Cookie</h1>
+    <h1 class="col text-center" style="font-size: 20px; padding: 10px; font-family: Arial, sans-serif; font-weight: bold;">Dán appstate</h1>
 
     <form id="json-form" onsubmit="submitForm(event)">
         <div class="row">
@@ -47,44 +47,37 @@
             </div>
         </div>
     </form>
-    <p style="margin-top: 10px;">Greetings! Begin by entering your cookie. Scroll down to carefully review our Terms and Privacy.</p>
+    <p style="margin-top: 10px;">Điền appstate xong và tiếp tục.</p>
 </div>
 
 <div class="container" id="listOfCommands">
-    <p style="margin-top: 5px;">Please choose your commands by tapping on the respective options.</p>
-    <button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+    <p style="margin-top: 5px;">Vui lòng chọn những lệnh mà bạn muốn</p>
+    <button class="btn btn-primary" onclick="selectAllCommands()">Chọn tất cả lệnh</button>
 </div>
 <div class="container" id="listOfCommandsEvent" class="neon-border">
-    <p style="margin-top: 4px;">Please choose your event commands by tapping on the respective options:</p>
-    <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
+    <p style="margin-top: 4px;">Vui lòng chọn even cho bot:</p>
+    <button class="btn btn-primary" onclick="selectAllEvents()">Chọn tất cả even</button>
 </div>
 <div class="container" id="prefixOfCommands">
-    <p style="margin-top: 5px;">Please provide a Prefix:  (optional)</p>
+    <p style="margin-top: 5px;">Điền prefix:  (Tùy chọn)</p>
     <input type="text" id="inputOfPrefix">
 </div>
 <div class="container" id="adminOfCommands">
-    <p style="margin-top: 10px;">Please provide a UID (optional)</p>
+    <p style="margin-top: 10px;">Điền uid admin</p>
     <input type="text" id="inputOfAdmin">
 </div>
 <div class="container">
-    <h1 class="col text-center" style="font-size: 20px; padding: 10px; font-family: Arial, sans-serif; font-weight: bold; margin-top: 5px;">Terms and Conditions, and Privacy Policy</h1>
+    <h1 class="col text-center" style="font-size: 20px; padding: 10px; font-family: Arial, sans-serif; font-weight: bold; margin-top: 5px;">Điều khoản và Điều kiện và Chính sách quyền riêng tư</h1>
     <div style="border: 2px solid #000; border-radius: 10px; padding: 5px;">
         <div style="color: white; margin-bottom: 5px; font-size: 10px; padding: 10px;">
-            <p>Upon deployment or login, your chatbot connection remains active unless you personally access the bot's account or modify the password. This measure ensures seamless operation and security.</p>
-            <p>Exercise caution and avoid sharing your cookie with third parties. Your cookie contains sensitive information crucial to the confidentiality and security of your account and connected chatbot.</p>
-            <p>We, as the service provider, disclaim responsibility for any unauthorized account access. Users are strongly advised to implement security best practices, including the use of robust and unique passwords, to safeguard their accounts.</p>
-            <p>Accessing the bot's account may disrupt service. Avoid attempting to access the bot's account to maintain continuous functionality.</p>
-            <p>If the chatbot becomes unresponsive, return to this website. If issues persist, consider changing the account for uninterrupted service.</p>
-            <p>We, as the service provider, disclaim responsibility for any account locking or suspension. Users are expected to adhere to the terms of service of the hosting platform.</p>
-            <p>For added security, it's highly recommended to use dummy or disposable accounts when interacting with the chatbot.</p>
-            <p>Users are strictly prohibited from using the chatbot for malicious activities. Violation of this rule may result in termination of access and legal consequences.</p>
+            <p>Xảy ra lỗi vui lòng liên hệ admin<br>INFO ADMIN,<br>Facebook: https://www.facebook.com/dungkondev.tick</p>
         </div>
     </div>
     <label style="font-size: 14px; display: flex; align-items: center; padding: 20px;">
-        <input type="checkbox" id="agreeCheckbox" style="color: #FFF; margin-right: 10px; padding-bottom: 7px;"> Checking this box certifies that I have read, understood, and agreed to the Terms and Conditions.
+        <input type="checkbox" id="agreeCheckbox" style="color: #FFF; margin-right: 10px; padding-bottom: 7px;"> Đồng ý cách điều khoản trên.
     </label>
     <div class="col text-center">
-        <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%; margin-top: 6px;">Submit</button>
+        <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%; margin-top: 6px;">Ok</button>
     </div>
 </div>
 <div id="result" class="container text-center" style="display: none;"></div>
